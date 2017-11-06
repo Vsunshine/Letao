@@ -8,5 +8,6 @@ require.config({
     paths:{
         jquery: 'assets/jquery/jquery.min',
         echarts:'assets/echarts/echarts.min',
+        template: 'assets/artTemplate/template-web',
     }
 })
