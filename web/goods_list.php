@@ -19,7 +19,7 @@
                     <li class="active">商品列表</li>
                 </ol>
                 <div class="page-title">
-                    <a href="./goods_add.html" class="btn btn-success btn-sm pull-right">添加商品</a>
+                    <a href="/goods_add.php" class="btn btn-success btn-sm pull-right">添加商品</a>
                 </div>
                 <div class="goods">
                 </div>
@@ -60,7 +60,7 @@
             <li><a href="?page=<%= page-1 %>">上一页</a></li>
         <% }%>
         <% for(var i=1; i<=yeshu; i++) {%>
-        <li <%if(i == page){%> class="active"  <%}%>><a href="?page= <%i%>"><%= i%></a></li>
+        <li <%if(i == page){%> class="active"  <%}%>><a href="?page=<%= i %>"><%= i%></a></li>
         <% }%>
 
         <% if(page < yeshu) {%>

@@ -1,4 +1,4 @@
-define(['jquery', 'template'], function ($, template) {
+define(['jquery', 'template', './utils'], function ($, template) {
     //分页显示
 
     //每页的数量
@@ -17,7 +17,7 @@ define(['jquery', 'template'], function ($, template) {
         data:{page:page, pageSize:size},
         success: function (info) {
             //分页
-
+            console.log(info);
             //总条数
             var num = info.total;
             //总页数
